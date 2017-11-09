@@ -674,7 +674,7 @@ mg_get_response_info(const struct mg_connection *);
 
 
 /* Return the local address (server side) of the socket for a connection */
-CIVETWEB_API struct sockaddr *
+CIVETWEB_API const struct sockaddr *
 mg_get_local_addr(const struct mg_connection *);
 
 

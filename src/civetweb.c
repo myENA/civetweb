@@ -3411,7 +3411,7 @@ mg_get_response_info(const struct mg_connection *conn)
 }
 
 const struct sockaddr *
-mg_get_local_addr(struct mg_connection *conn)
+mg_get_local_addr(const struct mg_connection *conn)
 {
 	return &conn->client.lsa.sa;
 }
