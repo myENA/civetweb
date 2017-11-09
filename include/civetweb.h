@@ -673,6 +673,11 @@ CIVETWEB_API const struct mg_response_info *
 mg_get_response_info(const struct mg_connection *);
 
 
+/* Return the local address (server side) of the socket for a connection */
+CIVETWEB_API struct sockaddr *
+mg_get_local_addr(const struct mg_connection *);
+
+
 /* Send data to the client.
    Return:
     0   when the connection has been closed

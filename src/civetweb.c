@@ -3405,6 +3405,12 @@ mg_get_response_info(const struct mg_connection *conn)
 	return &conn->response_info;
 }
 
+const struct sockaddr *
+mg_get_local_addr(struct mg_connection *conn)
+{
+	return &conn->client.lsa.sa;
+}
+
 
 static const char *
 get_proto_name(const struct mg_connection *conn)
